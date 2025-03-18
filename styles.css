@@ -1,0 +1,303 @@
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.shiny-text {
+    font-size: 68px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff0000, #ff7300, #ffeb00, #00ff00, #0073ff, #4b00ff, #ff00e1);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s infinite alternate, glow 2s infinite alternate;
+}
+
+.w {
+    font-family: "Atma", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.shiny-text1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff0000, #ff7300, #ffeb00, #00ff00, #0073ff, #4b00ff, #ff00e1);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s infinite alternate, glow 2s infinite alternate;
+}
+
+/* Umumiy sahifa sozlamalari */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: url('images/p.jpg') no-repeat center bottom/contain;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #00ff00, #0073ff, #4b00ff, #ff00e1);
+    background-size: 400% 400%;
+    animation: shine 6s infinite alternate;
+    color: rgb(154, 28, 28);
+}
+
+
+/* Navbar (Menyu) */
+nav {
+    display: flex; /* Elementlarni yonma-yon joylashtirish */
+    justify-content: center; /* Chap va o‘ng tomonga yoyish */
+    align-items: center; /* Markazga tekislash */
+    padding: 10px 20px; /* Ichki bo‘shliq */
+    background: rgba(145, 25, 25, 0); /* Shaffof qora fon */
+    position: fixed; /* Navbarni ekranga yopishtiramiz */
+    width: 100%; /* To‘liq ekranni qoplashi uchun */
+    bottom: 0; /* Pastga joylashishi uchun */
+    left: 0; /* Chapdan boshlansin */
+    z-index: 1000; /* Boshqa elementlardan yuqorida turishi uchun */
+}
+
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Header qismi */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150vh;
+    background: url('images/p.jpg') no-repeat center center/cover;
+}
+
+.header-content {
+    background: rgba(255, 255, 255, 0.144);
+    padding: 10px;
+    border-radius: 90px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contract {
+    font-weight: bold;
+    background: #d6c7c7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 25px; /* Ikonkalar orasidagi masofa */
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px; /* Ikonkani moslashtirish */
+    height: 40px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Rasmlar nisbatini saqlaydi */
+    transition: transform 0.3s ease; /* Hover effekti */
+}
+
+.social-links a:hover img {
+    transform: scale(1.2); /* Sichqoncha ustiga borganda kattalashadi */
+}
+
+.social-links a[href*="odin.fun"] img {
+    width: 60px; /* Odin logosi asl o‘lchamida bo‘lishi uchun */
+    height: 40px; /* Balandligini umumiy icon balandligiga moslashtirish */
+}
+
+/* About bo'limi */
+#about, #tokenomics, #how-to-buy {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+#tokenomics {
+    background: linear-gradient(135deg, #30261c, #ff0077); /* Yorqin fon */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: serif;
+}
+
+#tokenomics .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#tokenomics h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+#tokenomics ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#tokenomics ul li {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+#tokenomics ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#tokenomics p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* How to Buy - Bo'limi */
+.how-to-buy {
+    background: url('images/p.jpg') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.how-to-buy h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.buy-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+.step h3 {
+    font-size: 24px;
+    color: #FFD700; /* Oltin rang */
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* Umumiy stil */
+.simple-footer {
+    background-color: #0303037b;
+    color: #010101;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Knewave", sans-serif;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Telefonlar uchun media query (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    /* Navbar stilini o'zgartirish */
+    nav {
+        flex-direction: column; /* Elementlarni ustma-ust joylashtirish */
+        padding: 10px; /* Ichki bo'shliqni kamaytirish */
+        background: rgba(145, 25, 25, 0.8); /* Shaffof fon */
+    }
+
+    .logo img {
+        width: 60px; /* Logoni kichikroq qilish */
+        height: 60px;
+    }
+
+    .menu {
+        flex-direction: column; /* Menyu elementlarini ustma-ust joylashtirish */
+        align-items: center; /* Markazga tekislash */
+        padding: 0; /* Paddingni olib tashlash */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Elementlar orasidagi bo'shliqni o'zgartirish */
+    }
+
+    /* Header stilini o'zgartirish */
+    header {
+        height: 100vh; /* Balandlikni kamaytirish */
+        padding: 20px; /* Ichki bo'shliq qo'shish */
+    }
+
+    .header-content {
+        padding: 20px; /* Ichki bo'shliqni o'zgartirish */
+        border-radius: 20px; /* Radiusni kamaytirish */
+    }
+}
